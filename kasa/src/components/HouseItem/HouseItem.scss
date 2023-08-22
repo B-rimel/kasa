@@ -1,7 +1,6 @@
 .kasa-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  aspect-ratio: 1/1;
   border-radius: 25px;
   background: #f6f6f6;
   justify-items: center;
@@ -14,6 +13,7 @@
 }
 
 .kasa-housing img {
+  aspect-ratio: 1/1;
   width: 100%;
   height: 100%;
 }

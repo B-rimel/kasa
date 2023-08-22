@@ -1,7 +1,7 @@
 import { houseList } from "../../data/logements";
 import "../../components/HouseItem/HouseItem.scss";
 
-function HouseItem(
+function HouseItem({
   id,
   title,
   cover,
@@ -11,11 +11,12 @@ function HouseItem(
   rating,
   location,
   equipments,
-  tags
-) {
+  tags,
+}) {
+  const houseSelect = houseList.slice(0, 6);
   return (
     <div className="kasa-container">
-      {houseList.map((house) => (
+      {houseSelect.map((house) => (
         <div key={house.id} className="kasa-housing">
           <img src={house.cover} alt="" />
           <p>{house.title}</p>

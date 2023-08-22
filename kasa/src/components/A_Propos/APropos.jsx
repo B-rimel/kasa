@@ -1,5 +1,10 @@
 function APropos() {
-  return <p>C'est pas faux</p>;
+  return (
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis,
+      dolores?
+    </p>
+  );
 }
 
 export default APropos;
