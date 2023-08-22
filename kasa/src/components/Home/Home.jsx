@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.scss";
+import "../HouseItem/HouseItem";
+import HouseItem from "../HouseItem/HouseItem";
 // import "../../background.png";
 
 function Home() {
@@ -8,6 +10,7 @@ function Home() {
       <div className="kasa-banner">
         <p className="kasa-slogan">Chez vous, partout et ailleurs</p>
       </div>
+      <HouseItem />
     </div>
   );
 }
