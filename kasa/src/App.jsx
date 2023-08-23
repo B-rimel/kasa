@@ -5,7 +5,7 @@ import Error from "./pages/Error/Error.jsx";
 import Home from "./pages/Home/Home.jsx";
 import APropos from "./pages/A_Propos/APropos.jsx";
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
