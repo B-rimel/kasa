@@ -1,13 +1,13 @@
-import { houseList } from "../../data/logements";
+import React from "react";
 
-function Tags() {
+function Tags(props) {
   return (
     <div>
-      {houseList.map(({ id, tags }) => (
-        <span className="kasa-tags" key={id}>
-          {tags}
-        </span>
-      ))}
+      <div className="kasa-tags">
+        {props.map((tag) => (
+          <span className="kasa-tag">{tag}</span>
+        ))}
+      </div>
     </div>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.scss";
 import "../../components/HouseItem/HouseItem";
 import HouseItem from "../../components/HouseItem/HouseItem";
-// import "../../background.png";
 
 function Home() {
   return (
