@@ -8,7 +8,9 @@ function Fiche() {
   const housingItem = houseList.find((item) => item.id === id);
   return (
     <div>
-      <Tags housingItem={housingItem.tags} />
+      <div>
+        <Tags housingItem={housingItem.tags} />
+      </div>
       <Host
         hostName={housingItem.host.name}
         hostPicture={housingItem.host.picture}

@@ -4,7 +4,7 @@ function Host(props) {
   return (
     <div>
       <p>{props.hostName}</p>
-      <img src={props.hostPicture} alt="Photo de `${props.hostName}`" />
+      <img src={props.hostPicture} alt="Photo" />
     </div>
   );
 }

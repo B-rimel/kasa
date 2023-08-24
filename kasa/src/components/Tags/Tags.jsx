@@ -1,11 +1,15 @@
 import React from "react";
 
 function Tags(props) {
+  const housingTags = props.housingTags;
+
   return (
     <div>
       <div className="kasa-tags">
-        {props.map((tag) => (
-          <span className="kasa-tag">{tag}</span>
+        {housingTags.map((tag) => (
+          <span className="kasa-tag" key={tag}>
+            {tag}
+          </span>
         ))}
       </div>
     </div>
