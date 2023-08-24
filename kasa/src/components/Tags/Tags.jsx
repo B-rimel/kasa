@@ -7,9 +7,7 @@ function Tags(props) {
     <div>
       <div className="kasa-tags">
         {housingTags.map((tag) => (
-          <span className="kasa-tag" key={tag}>
-            {tag}
-          </span>
+          <span className="kasa-tag">{tag}</span>
         ))}
       </div>
     </div>
