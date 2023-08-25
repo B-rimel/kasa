@@ -1,0 +1,45 @@
+.kasa-dropdown-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kasa-collapse {
+  border-radius: 10px;
+  width: 582px;
+}
+
+.kasa-collapse-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff6060;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+
+  & .close {
+    transform: rotate(0deg);
+    transition: transform 500ms ease-in-out;
+  }
+
+  & .open {
+    transform: rotate(-180deg);
+    transition: transform 500ms ease-in-out;
+  }
+}
+
+.kasa-collapse-content {
+  background-color: #f6f6f6;
+  padding: 20px;
+  color: #ff6060;
+  border-radius: 10px;
+
+  & .close {
+    height: 0;
+    transition: height 500ms ease-in-out;
+  }
+
+  & .open {
+    height: auto;
+    transition: height 500ms ease-in-out;
+  }
+}
