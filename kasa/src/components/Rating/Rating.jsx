@@ -1,10 +1,9 @@
 import React from "react";
 
 function Rating(props) {
-  const housingRatings = props.hostRating;
-  console.log(housingRatings);
+  const ratings = props.rating;
 
-  return <p>L'appartement a {housingRatings} sur 5</p>;
+  return <p>L'appartement a {ratings} sur 5</p>;
 }
 
 export default Rating;
