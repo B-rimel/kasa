@@ -2,6 +2,7 @@ import Host from "../../components/Host/Host";
 import Title from "../../components/Title/Title";
 import Tags from "../../components/Tags/Tags";
 import Rating from "../../components/Rating/Rating";
+import Caroussel from "../../components/Caroussel/Caroussel";
 
 import Dropdown from "../../components/Dropdown/Dropdown";
 
@@ -22,6 +23,7 @@ function Fiche() {
     <div>
       <div className="kasa-info">
         <div className="kasa-housing-summary">
+          <Caroussel image={housing.pictures} />
           <div className="kasa-title-host">
             <Title title={housing.title} location={housing.location} />
             <Host name={housing.host.name} picture={housing.host.picture} />
