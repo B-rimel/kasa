@@ -1,4 +1,5 @@
 import React from "react";
+import "./Tags.scss";
 
 function Tags(props) {
   const tags = props.tags;
@@ -7,7 +8,7 @@ function Tags(props) {
     <div>
       <div className="kasa-tags">
         {tags.map((tag) => (
-          <span className="kasa-tag">{tag}</span>
+          <p className="kasa-tag">{tag}</p>
         ))}
       </div>
     </div>
