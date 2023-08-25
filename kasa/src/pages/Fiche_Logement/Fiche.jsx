@@ -18,8 +18,28 @@ function Fiche() {
       <Tags tags={housing.tags} />
       <Host name={housing.host.name} picture={housing.host.picture} />
       <Rating rating={housing.rating} />
-      <Dropdown amenities={housing.equipments} />
-      <Dropdown amenities={housing.description} />
+
+      <div>
+        <div>
+          <Dropdown
+            content={<p>{housing.description}</p>}
+            label="Description"
+          />
+        </div>
+
+        <div>
+          <Dropdown
+            content={
+              <ul>
+                {housing.equipments.map((equipments, index) => (
+                  <li key={index}>{equipments}</li>
+                ))}
+              </ul>
+            }
+            label="Equipements"
+          />
+        </div>
+      </div>
     </div>
   );
 }

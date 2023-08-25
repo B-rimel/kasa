@@ -1,11 +1,9 @@
 function Dropdown(props) {
-  const innerText = props.amenities;
   return (
-    <ul>
-      {innerText.map((content) => (
-        <li>{content}</li>
-      ))}
-    </ul>
+    <div>
+      <h1>{props.label}</h1>
+      <div>{props.content}</div>
+    </div>
   );
 }
 
