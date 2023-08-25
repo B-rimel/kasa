@@ -15,9 +15,11 @@ function Fiche() {
   }
   return (
     <div>
-      <Tags tags={housing.tags} />
-      <Host name={housing.host.name} picture={housing.host.picture} />
-      <Rating rating={housing.rating} />
+      <div className="kasa-housing-summary">
+        <Tags tags={housing.tags} />
+        <Host name={housing.host.name} picture={housing.host.picture} />
+        <Rating rating={housing.rating} />
+      </div>
 
       <div className="kasa-dropdown-container">
         <Dropdown content={<p>{housing.description}</p>} label="Description" />
