@@ -1,5 +1,9 @@
 import React from "react";
 import { useState } from "react";
+import aleft from "../../assets/arrow_left.png";
+import aright from "../../assets/arrow_right.png";
+
+import "./Caroussel.scss";
 
 function Caroussel(props) {
   const image = props.image;
@@ -14,10 +18,13 @@ function Caroussel(props) {
   };
 
   return (
-    <div>
+    <div className="kasa-caroussel">
       <img src={image[imageIndex]} alt="" />
-      <p onClick={previousPicture}>Photo précédente !</p>
-      <p onClick={nextPicture}>Photo suivante !</p>
+      <img src={aleft} alt="" onClick={previousPicture} className="kasa-prev" />
+      <img src={aright} alt="" onClick={nextPicture} className="kasa-next" />
+      <p className="kasa-counter">
+        {imageIndex + 1}/{image.length}
+      </p>
     </div>
   );
 }

@@ -3,18 +3,19 @@
 * {
     font-family: 'Montserrat';
     margin: 0;
+    font-weight: 500;
 }
 
 body {
     padding: 0 5%;
 }
 
-h1 {
-    font-weight: 500;
-}
-
 .app {
     position: relative;
     min-height: 100vh;
     height: auto;
+}
+
+a {
+    text-decoration: none;
 }

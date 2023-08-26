@@ -1,0 +1,41 @@
+.kasa-caroussel {
+  width: 100%;
+  border-radius: 25px;
+  height: 415px;
+  margin-bottom: 30px;
+  position: relative;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  & .kasa-prev,
+  .kasa-next {
+    width: 47px;
+    height: 80px;
+  }
+
+  & .kasa-prev {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+  }
+
+  & .kasa-next {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+  }
+
+  & .kasa-counter {
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+  }
+}
