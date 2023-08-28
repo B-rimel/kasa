@@ -37,15 +37,19 @@
   padding: 20px;
   color: #ff6060;
   border-radius: 10px;
+  overflow: hidden;
 
-  .content-close {
-    transition: height 500ms ease-in-out;
-    height: 0;
+  &.content-close {
+    max-height: 0;
+    transition: max-height ease-in-out 0.5s;
   }
 
-  .content-open {
-    height: auto;
-    transition: height 500ms ease-in-out;
-    height: auto;
+  &.content-open {
+    max-height: 500px;
+    transition: max-height linear 0.5s;
+  }
+
+  ul {
+    list-style: none;
   }
 }

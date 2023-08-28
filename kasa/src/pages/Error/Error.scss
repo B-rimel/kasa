@@ -1,0 +1,22 @@
+.kasa-error {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ff6060;
+  text-align: center;
+
+  h1 {
+    font-size: 288px;
+    font-weight: 700;
+  }
+
+  .kasa-oups {
+    font-size: 36px;
+  }
+
+  .kasa-back {
+    font-size: 18;
+    text-decoration: underline;
+  }
+}

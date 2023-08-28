@@ -1,4 +1,4 @@
-.kasa-header {
+header {
   display: flex;
   font-weight: 500;
   justify-content: space-between;
@@ -7,7 +7,7 @@
   color: #ff6060;
   font-size: 24px;
 
-  & :hover {
+  & span:hover {
     text-decoration: underline;
   }
 }

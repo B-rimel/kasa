@@ -1,10 +1,25 @@
 import React from "react";
+import StarActive from "../../assets/star-active.png";
+import StarInactive from "../../assets/star-inactive.png";
 import "./Rating.scss";
 
 function Rating(props) {
-  const ratings = props.rating;
+  const range = [1, 2, 3, 4, 5];
+  const rating = props.rating;
 
-  return <p className="kasa-rating">L'appartement a {ratings} sur 5</p>;
+  return (
+    <div className="rating">
+      {range.map((rangeElem) => (
+        <span key={rangeElem.toString()}>
+          {rating >= rangeElem ? (
+            <img src={StarActive} alt="Etoile active" />
+          ) : (
+            <img src={StarInactive} alt="Etoile inactive" />
+          )}
+        </span>
+      ))}
+    </div>
+  );
 }
 
 export default Rating;

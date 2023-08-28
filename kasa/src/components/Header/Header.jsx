@@ -5,16 +5,20 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="kasa-header">
+    <header>
       <Link to="/">
         <img src={logo} alt="Logo Kasa" />
       </Link>
 
       <ul className="kasa-menu">
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A propos</Link>
+        <span>
+          <Link to="/">Accueil</Link>
+        </span>
+        <span>
+          <Link to="/about">A propos</Link>
+        </span>
       </ul>
-    </div>
+    </header>
   );
 }
 
