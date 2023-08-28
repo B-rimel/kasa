@@ -1,12 +1,11 @@
 import "./APropos.scss";
+import Banner from "../../components/Banner/Banner";
+import BannerBackground from "../../assets/background_2.png";
 
 function APropos() {
   return (
     <div className="kasa-about">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis,
-        dolores?
-      </p>
+      <Banner image={BannerBackground} />
     </div>
   );
 }

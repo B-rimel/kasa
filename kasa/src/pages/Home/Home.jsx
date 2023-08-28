@@ -2,13 +2,13 @@ import React from "react";
 import "./Home.scss";
 import "../../components/HouseItem/HouseItem";
 import HouseItem from "../../components/HouseItem/HouseItem";
+import Banner from "../../components/Banner/Banner";
+import BannerBackground from "../../assets/background.png";
 
 function Home() {
   return (
     <div>
-      <div className="kasa-banner">
-        <h1 className="kasa-slogan">Chez vous, partout et ailleurs</h1>
-      </div>
+      <Banner image={BannerBackground} text="Chez vous, partout et ailleurs" />
       <HouseItem />
     </div>
   );
