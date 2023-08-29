@@ -6,6 +6,12 @@
   margin: 50px 0;
   position: relative;
 
+  &::before {
+    opacity: 0.3;
+    background: #000;
+    mix-blend-mode: darken;
+  }
+
   & img {
     width: 100%;
     border-radius: 25px;

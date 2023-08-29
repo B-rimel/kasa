@@ -1,8 +1,9 @@
 .kasa-error {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: auto;
+  padding-bottom: auto;
   color: #ff6060;
   text-align: center;
 
