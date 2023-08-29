@@ -41,6 +41,7 @@
 
   &.content-close {
     max-height: 0;
+    overflow: hidden;
     transition: max-height ease-in-out 0.5s;
   }
 
@@ -52,4 +53,9 @@
   ul {
     list-style: none;
   }
+}
+
+.kasa-about {
+  width: 100%;
+  margin-bottom: 30px;
 }

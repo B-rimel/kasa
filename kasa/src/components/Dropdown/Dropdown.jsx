@@ -6,7 +6,7 @@ function Dropdown(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
-    <div className="kasa-collapse">
+    <div className={`kasa-collapse ${props.className}`}>
       <div onClick={() => setIsOpen(false)} className="kasa-collapse-title">
         <h1>{props.label}</h1>
         <img src={arrow} alt="" className="open" />
@@ -14,7 +14,7 @@ function Dropdown(props) {
       <div className="kasa-collapse-content content-open">{props.content}</div>
     </div>
   ) : (
-    <div className="kasa-collapse">
+    <div className={`kasa-collapse ${props.className}`}>
       <div onClick={() => setIsOpen(true)} className="kasa-collapse-title">
         <h1>{props.label}</h1>
         <img src={arrow} alt="" className="close" />
