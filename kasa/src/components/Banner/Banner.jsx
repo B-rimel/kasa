@@ -5,7 +5,11 @@ function Banner(props) {
   return (
     <div className="kasa-banner">
       <img src={props.image} alt="Bannière de Kasa" />
-      {props.text && <p className="kasa-slogan">{props.text}</p>}
+      {props.text && (
+        <div className="kasa-overlay">
+          <p className="kasa-slogan">{props.text}</p>
+        </div>
+      )}
     </div>
   );
 }
