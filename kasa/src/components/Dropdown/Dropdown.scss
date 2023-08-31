@@ -1,11 +1,20 @@
 .kasa-dropdown-container {
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .kasa-collapse {
   border-radius: 10px;
-  width: 582px;
+  width: 40%;
+
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
 }
 
 .kasa-collapse-title {
@@ -40,9 +49,9 @@
   overflow: hidden;
 
   &.content-close {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 0.5s linear;
+    transition: max-height 0.5s linear;
 
     & p,
     ul {
@@ -51,8 +60,8 @@
   }
 
   &.content-open {
-    height: auto;
-    transition: height 0.5s linear;
+    max-height: 500px;
+    transition: max-height 0.5s linear;
 
     & p,
     ul {
