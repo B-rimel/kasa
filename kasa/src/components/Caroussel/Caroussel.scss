@@ -16,6 +16,11 @@
   .kasa-next {
     width: 47px;
     height: 80px;
+
+    @media screen and (max-width: 840px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   & .kasa-prev {
