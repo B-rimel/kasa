@@ -7,8 +7,23 @@ header {
   color: #ff6060;
   font-size: 24px;
 
+  @media screen and (max-width: 840px) {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
   & span:hover {
     text-decoration: underline;
+  }
+
+  img {
+    width: 210px;
+    height: 68px;
+
+    @media screen and (max-width: 840px) {
+      width: 145px;
+      height: 47px;
+    }
   }
 }
 
@@ -16,4 +31,8 @@ header {
   display: flex;
   list-style: none;
   gap: 57px;
+
+  @media screen and (max-width: 840px) {
+    gap: 27px;
+  }
 }

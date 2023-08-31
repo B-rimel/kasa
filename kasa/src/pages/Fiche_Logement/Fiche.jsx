@@ -21,16 +21,18 @@ function Fiche() {
   }
   return (
     <div>
-      <div className="kasa-info">
+      <div className="kasa-sheet">
         <div className="kasa-housing-summary">
           <Caroussel image={housing.pictures} />
-          <div className="kasa-title-host">
-            <Title title={housing.title} location={housing.location} />
-            <Host name={housing.host.name} picture={housing.host.picture} />
-          </div>
-          <div className="kasa-tags-rating">
-            <Tags tags={housing.tags} />
-            <Rating rating={housing.rating} />
+          <div className="kasa-info">
+            <div className="kasa-title-tags">
+              <Title title={housing.title} location={housing.location} />
+              <Tags tags={housing.tags} />
+            </div>
+            <div className="kasa-host-rating">
+              <Host name={housing.host.name} picture={housing.host.picture} />
+              <Rating rating={housing.rating} />
+            </div>
           </div>
         </div>
       </div>
