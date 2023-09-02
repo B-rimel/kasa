@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import logo from "../../assets/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -9,15 +9,14 @@ function Header() {
       <Link to="/">
         <img src={logo} alt="Logo Kasa" />
       </Link>
-
-      <ul className="kasa-menu">
+      <nav className="kasa-menu">
         <span>
-          <Link to="/">Accueil</Link>
+          <NavLink to="/">Accueil</NavLink>
         </span>
         <span>
-          <Link to="/about">A propos</Link>
+          <NavLink to="/about">A propos</NavLink>
         </span>
-      </ul>
+      </nav>
     </header>
   );
 }

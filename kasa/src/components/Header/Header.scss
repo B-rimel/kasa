@@ -4,16 +4,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 45px 0;
-  color: #ff6060;
-  font-size: 24px;
 
   @media screen and (max-width: 840px) {
     font-size: 12px;
     text-transform: uppercase;
-  }
-
-  & span:hover {
-    text-decoration: underline;
   }
 
   img {
@@ -31,6 +25,16 @@ header {
   display: flex;
   list-style: none;
   gap: 57px;
+
+  a {
+    color: #ff6060;
+    font-size: 24px;
+    text-decoration: none;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
 
   @media screen and (max-width: 840px) {
     gap: 27px;
